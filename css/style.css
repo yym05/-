@@ -1,0 +1,441 @@
+@charset "UTF-8";
+
+/* reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    background: #fff;
+    color: #333;
+    font-size: 14px;
+    font-family: "돋움";
+}
+
+#wrap {
+    width: 100%;
+    height: calc(400px + 200px + 250px + 120px);
+    background-color: #d4d4d4;
+    position: relative;
+}
+
+.left {
+    width: 200px;
+    height: 850px;
+    background-color: aquamarine;
+    float: left;
+}
+
+.logo {
+    width: 200px;
+    height: 100px;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.logo img {}
+
+.nav {
+    /* border: 1px solid black; */
+    padding: 20px 0;
+}
+
+.main {
+    width: 180px;
+    margin: 0 auto;
+}
+
+.main li {
+    margin-bottom: 5px;
+}
+
+.main li a {
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    background-color: orange;
+    text-align: center;
+    font-weight: bold;
+}
+
+.main li a:hover {
+    background-color: olivedrab;
+    color: white;
+}
+
+.main li a.on {
+    background-color: olivedrab;
+    color: white;
+}
+
+.sub {
+    position: absolute;
+    left: 190px;
+    top: 120px;
+    width: calc(100% - 190px);
+    background-color: rgba(0, 0, 0, .5);
+    z-index: 500;
+}
+
+.sub_list {}
+
+.sub_list>li {
+    margin-bottom: 5px;
+}
+
+.sub_list>li>ul {}
+
+.sub_list>li>ul>li {
+    display: inline-block;
+}
+
+.sub_list>li>ul>li a {
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    padding: 0 20px;
+}
+
+
+
+.sub_list>li>ul>li a:hover {
+    background-color: rgba(0, 0, 0, .8);
+    color: white;
+}
+
+.sopt_menu {
+    text-align: center;
+}
+
+.sopt_menu a {
+    display: inline-block;
+    padding: 0px 8px;
+}
+
+.sopt_menu a::after {
+    content: "|";
+    display: inline-block;
+    padding-left: 10px;
+}
+
+.sopt_menu a:last-child::after {
+    display: none;
+}
+
+/* .sopt_menu a:first-child{
+    border-right: 1px solid #666;
+} */
+
+
+
+
+.right {
+    width: calc(100% - 200px);
+    height: 850px;
+    background-color: wheat;
+    float: right;
+}
+
+.img_slide {
+    width: 100%;
+    height: 400px;
+    background-color: yellow;
+}
+
+.fade {
+    width: 100%;
+    height: 400px;
+    position: relative;
+}
+
+.fade li {
+    width: 100%;
+    height: 400px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.fade li img {
+    height: 100%;
+    width: 100%;
+}
+
+
+
+.banner {
+    width: 100%;
+    height: 200px;
+    background-color: yellowgreen;
+    padding: 10px 0;
+}
+
+.ban_inner {
+    width: calc(100% - 20px);
+    height: 180px;
+    margin: 0 auto;
+    border: 1px solid black;
+}
+
+.b_1 {
+    float: left;
+    /* width: 180px; */
+    width: 15%;
+    height: 178px;
+    padding: 4px 0;
+    margin-right: 20px;
+    margin-left: 10px;
+}
+
+.b_1 img {
+    width: 100%;
+    height: 100%;
+}
+
+.b_2 {
+    width: 60%;
+    float: left;
+    padding-top: 45px;
+}
+
+.b_2 h3 {
+    font-size: 16px;
+    line-height: 50px;
+}
+
+.b_2 p {}
+
+.arrow {
+    float: right;
+    padding-top: 69px;
+    padding-right: 50px;
+}
+
+
+
+.not_gal {
+    width: 100%;
+    height: 250px;
+    background-color: violet;
+    padding: 10px;
+    position: relative;
+}
+
+.not_gal h2 {
+    background-color: #ccc;
+    font-size: 14px;
+    width: 100px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    border: 1px solid black;
+    border-bottom-color: #f1f1f1;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    z-index: 100;
+    cursor: pointer;
+}
+
+.not_gal h2.on {
+    background-color: #f1f1f1;
+}
+
+.not_gal ul {
+    background-color: #f1f1f1;
+    border: 1px solid black;
+    position: absolute;
+    left: 10px;
+    top: 44px;
+    width: calc(100% - 20px);
+    height: 196px;
+    padding: 10px;
+
+}
+
+.notice {}
+
+.notice li {
+    height: 43px;
+    line-height: 43px;
+}
+
+.notice li:hover {
+    border-bottom: 1px dotted #000;
+}
+
+.notice li a {
+    display: block;
+    width: 75%;
+    float: left;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.notice li span {
+    float: right;
+}
+
+.gallery h2 {
+    left: 120px;
+}
+
+.gallery ul {
+    text-align: center;
+    display: none;
+}
+
+.gallery ul li {
+    width: 170px;
+    height: 170px;
+    display: inline-block;
+    margin: 0 50px;
+}
+
+.gallery ul li img {
+    width: 100%;
+    height: 100%;
+}
+
+.quick {
+    width: 200px;
+    height: 300px;
+    background: white;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.quick ul {
+    width: 180px;
+    margin: 0 auto;
+    text-align: center;
+
+}
+
+.quick ul li {
+    height: 100px;
+    border-bottom: 1px dotted #666;
+    padding: 5px;
+}
+
+.quick ul li a {
+    display: block;
+}
+
+.quick ul li span {
+    display: block;
+    font-size: 12px;
+}
+
+.quick ul li:last-child {
+    border-bottom: none !important;
+}
+
+.quick ul img {
+    width: 40%;
+}
+
+
+
+.footer {
+    clear: both;
+    width: 100%;
+    height: 120px;
+    background-color: rgba(153, 205, 50, 0.171);
+}
+
+.f_logo {
+    width: 200px;
+    height: 120px;
+    padding-top: 40px;
+    float: left;
+    text-align: center;
+}
+
+.f_right {
+    width: calc(100% - 200px);
+    height: 120px;
+    float: right;
+    /* background-color: red; */
+}
+
+.f_menu {
+    height: 60px;
+    line-height: 60px;
+    padding: 0 20px;
+}
+
+.f_menu a {
+    display: inline-block;
+    padding: 0 10px;
+    /* border-right: 1px solid #333; */
+}
+
+.f_menu a:hover {
+    text-decoration: underline;
+}
+
+.f_menu a::before {
+    content: "|";
+    display: inline-block;
+    padding-right: 15px;
+    /* border: 1px solid red; */
+}
+
+.f_menu a:first-child::before {
+    display: none;
+}
+
+
+.copy {
+    height: 60px;
+    line-height: 60px;
+    padding: 0 20px;
+}
+
+.popup {
+    width: 300px;
+    height:400px;
+    background-color: pink;
+    border: 10px double black;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 600;
+    padding: 30px;
+    display: none;
+}
+
+.popup h3{
+    padding-bottom: 10px;
+    border-bottom: 1px solid black;
+
+}
+.popup p{
+    padding-top:20px;
+    line-height: 1.8    ;
+    text-align: justify;
+}
+.popup .close{
+    position: absolute;
+    right: 30px;
+    top: 20px;
+    padding: 5px 10px;
+    cursor: pointer;
+}

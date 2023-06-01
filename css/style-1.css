@@ -1,0 +1,121 @@
+@charset "UTF-8";
+
+/* reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    background: #fff;
+    color: #333;
+    font-size: 14px;
+    font-family: "돋움";
+}
+
+#wrap {
+    width: 100%;
+    height: calc(400px + 200px + 250px + 120px);
+    background-color: #d4d4d4;
+    position: relative;
+}
+
+.left {
+    width: 200px;
+    height: 870px;
+    background-color: aquamarine;
+    float: left;
+}
+
+.logo {
+    width: 200px;
+    height: 100px;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.logo img {}
+
+.nav {
+    /* border: 1px solid red; */
+    width: 180px;
+    margin: 0 auto;
+}
+
+.main {}
+
+.main>li {
+    position: relative;
+}
+
+.main>li>a {
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background-color: violet;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.main>li:hover>a {
+    background: turquoise;
+}
+
+.sub {
+    position: absolute;
+    left: 180px;
+    top: 0px;
+    width: 1730px;
+    background-color: rgba(0,0,0,.5);
+    color: white;
+    z-index: 200;
+}
+
+.sub li {
+    display: inline-block;
+    height: 50px;
+    line-height: 50px;
+
+}
+
+.sub li a {
+    display: block;
+    width: 150px;
+    text-align: center;
+}
+
+.sub li a:hover {
+    background-color: rgba(255, 255, 255, .5);
+}
+
+
+
+
+
+
+.right {
+    width: calc(100% - 200px);
+    height: 870px;
+    background-color: wheat;
+    float: right;
+}
+
+.footer {
+    clear: both;
+    width: 100%;
+    height: 120px;
+    background-color: yellowgreen;
+}
